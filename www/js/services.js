@@ -123,14 +123,13 @@ angular.module('App.Services', [])
                 // for POST, we need to specify data to add, AND convert it to
                 // a string before passing it in as seperate parameter data
                 var dataObject = {
-                    "name": _params.name,
-                    "room": _params.room
+                    "courseId": _params.courseId,
                 };
 
                 var dataObjectString = JSON.stringify(dataObject);
 
                 // $http returns a promise, which has a then function
-                return $http.post(baseURL + 'classes/stuff', dataObjectString, settings)
+                return $http.post(baseURL + 'classes/Course', dataObjectString, settings)
                     .then(function (response) {
                         // In the response resp.data contains the result
                         // check the console to see all of the data returned

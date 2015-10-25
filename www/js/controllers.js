@@ -66,6 +66,9 @@ angular.module('App.Controllers', ['App.Services'])
             alert("Error". _error.message);
         });
     })
+    .controller('profileCtrl', function(){
+
+    })
 	.controller('homeCtrl', function ($scope, $state, ParseHttpService) {
         $scope.stateInfo = $state.current;
 
@@ -78,10 +81,13 @@ angular.module('App.Controllers', ['App.Services'])
             room: ""
         };
 
+        $scope.goToProfile = function() {
+            $state.go('profile', {});
+        };
+
+
         $scope.goTointrotocompsciState = function() {
-            $state.go('introtocompsci', {
-                
-            });
+            $state.go('introtocompsci', {});
         };
 
         populateList();
