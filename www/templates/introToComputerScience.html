@@ -1,0 +1,16 @@
+        <ion-view title="Home">
+            <ion-content class="padding">
+                    <ion-item class="item-divider">Upperclassmen taking Intro to Computer Science</ion-item>
+
+                     <ion-list ng-repeat="item in itemsList track by item.objectId">
+                        <ion-item class = "Name" ng-click="goToUpperclassmenProfile(item.objectId)">
+                            {{$index + 1}} - Name: {{item.Name}}, Major: {{item.Major}}
+                        </ion-item>
+                     </ion-list>
+                    </ion-item>
+
+
+                <pre class="padding">{{stateInfo | json}}</pre>
+            </ion-content>
+        </ion-view>
+    

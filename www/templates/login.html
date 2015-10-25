@@ -1,0 +1,16 @@
+<ion-view title="Login User"    hide-back-button=true hide-buttons=true>
+    <ion-content class="padding">
+        <ion-item class="card">
+
+            <label class="item item-input">
+                <input type="text" ng-model="credentials.username" placeholder="UserName"/>
+            </label>
+            <label class="item item-input">
+                <input type="password" ng-model="credentials.password" placeholder="Password"/>
+            </label>
+            <button class="button button-block" ng-click="doLoginAction()">Login</button>
+            <button class="button button-block" ng-click="goToSignupAction()">Sign Up</button>
+            <div class="padding"></div>
+        </ion-item>
+    </ion-content>
+</ion-view>

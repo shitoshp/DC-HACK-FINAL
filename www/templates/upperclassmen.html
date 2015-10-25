@@ -1,0 +1,45 @@
+<ion-view title="Upperclassman Profile">
+    <ion-content padding="true" class="has-header">
+        <div class="list card">
+            <div class="item item-divider">{{itemDetails.Name}}</div>
+            <div class="item item-body">
+                <ion-list>
+                    <ion-item class="item-thumbnail-left">
+                        <img src="{{itemDetails.profileUrl}}">
+                        <h2>{{itemDetails.Classification}}</h2>
+                        <p>{{itemDetails.Major}}</p>
+                    </ion-item>
+                </ion-list>
+                <div>
+                    <p>{{itemDetails.Message}}</p>
+                </div>
+            </div>
+        </div>
+        <form class="list">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" placeholder="Search for courses">
+            </label>
+        </form>
+        <ion-list></ion-list>
+        <ion-list></ion-list>
+        <div class="list">
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Computer Science
+                </div>
+                <select>
+                    <option selected="">CS 100</option>
+                    <option>CS 135</option>
+                    <option>CS 135</option>
+                    <option>CSCI 201</option>
+                </select>
+            </label>
+
+        </div>
+        <div class="button-bar"></div>
+        <button class="button button-stable button-block button-small">Messages</button>
+        <button class="button button-stable button-block button-small">Request Help</button>
+    </ion-content>
+</ion-view>
